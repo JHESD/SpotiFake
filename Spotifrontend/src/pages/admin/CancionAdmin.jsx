@@ -7,7 +7,7 @@ function CancionAdmin() {
     const [albumId, setAlbumId] = useState('');
     const [titulo, setTitulo] = useState('');
     const [archivoMp3, setArchivoMp3] = useState(null);
-    const [editando, setEditando] = useState(null); // ID de canción en edición
+    const [editando, setEditando] = useState(null);
 
     useEffect(() => {
         fetchAlbums();
@@ -100,7 +100,7 @@ function CancionAdmin() {
                         accept="audio/mpeg"
                         className="form-control"
                         onChange={(e) => setArchivoMp3(e.target.files[0])}
-                        required={!editando} // Requerido solo al crear
+                        required={!editando}
                     />
                 </div>
 
