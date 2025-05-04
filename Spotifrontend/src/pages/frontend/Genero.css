@@ -1,0 +1,61 @@
+.generos-container {
+    padding: 2rem;
+}
+
+.generos-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.generos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.genero-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.genero-card:hover {
+    transform: scale(1.05);
+}
+
+.genero-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(75%);
+    transition: filter 0.3s ease;
+}
+
+.genero-card:hover .genero-img {
+    filter: brightness(50%);
+}
+
+.genero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genero-name {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
